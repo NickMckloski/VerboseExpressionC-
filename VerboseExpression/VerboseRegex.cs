@@ -30,10 +30,19 @@ namespace VerboseExpression
         /// <summary>
         /// Regex matches logic
         /// </summary>
-        /// <param name="s">string to match</param>
-        public void Matches(string s)
+        /// <param name="str">string to match</param>
+        public void Matches(string str)
         {
-            Expression += "[" + s + "]";
+            Expression += str;
+        }
+
+        /// <summary>
+        /// Regex character range matching
+        /// </summary>
+        /// <param name="chars">string of characters to match</param>
+        public void MatchesChars(string chars)
+        {
+            Expression += "[" + chars + "]";
         }
     }
 }

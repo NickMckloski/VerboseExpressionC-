@@ -13,7 +13,7 @@ namespace Tests
             while(true)
             {
                 VerboseRegex verboseRegex = new VerboseRegex(RegexOptions.IgnoreCase);
-                verboseRegex.Matches("abc");
+                verboseRegex.MatchesChars("abc");
 
                 string testCase = RandomString(5);
                 if (verboseRegex.Finalize().IsMatch(testCase))
